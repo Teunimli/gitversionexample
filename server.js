@@ -9,7 +9,7 @@ application.all('*', (request, response, next) =>{
 });
 
 application.listen(port, () => {
-    console.log('magic happens at port ' + port);
+    console.log('The magic happens at port ' + port);
 });
 
 module.exports = application;
