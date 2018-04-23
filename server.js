@@ -8,6 +8,12 @@ application.all('*', (request, response, next) =>{
     next();
 });
 
+application.get('/hello', (request, response, next) =>{
+    response.status(200).json({
+       'msg': 'Hello JEDIS'
+    });
+});
+
 application.listen(port, () => {
     console.log('The magic happens at port ' + port);
 });
